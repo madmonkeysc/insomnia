@@ -31,5 +31,5 @@ jobs:
           server: 46.202.183.110
           port: 65002
           password: ${{ secrets.FTP_PASSWORD }}
-          local_path: ./dist/
+          local_path: ./dist/*
           remote_path: /home/u968279674/domains/usainsomnia.com/public_html/
