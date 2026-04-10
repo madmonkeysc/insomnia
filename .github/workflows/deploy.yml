@@ -24,14 +24,12 @@ jobs:
       - name: 🏗️ Build Project
         run: npm run build
 
-      - name: 📂 Sync to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: 📂 Sync to Hostinger (SFTP)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ftp.usainsomnia.com
           username: u968279674
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ftp.usainsomnia.com
           port: 22
-          local-dir: ./dist/
-          server-dir: ./public_html/
-          protocol: sftp
-          state-name: .ftp-deploy-sync-state.json
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: ./dist/
+          remoteDir: ./public_html/
