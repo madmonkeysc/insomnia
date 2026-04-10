@@ -31,5 +31,5 @@ jobs:
           server: ftp.usainsomnia.com
           port: 22
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ./dist/
-          remoteDir: ./public_html/
+          local_path: ./dist/
+          remote_path: ./public_html/
