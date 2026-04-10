@@ -27,8 +27,8 @@ jobs:
       - name: 📂 Sync to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 46.202.183.110
-          username: u968279674
+          server: ftp.usainsomnia.com
+          username: u968279674.usainsomnia.com
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: ./public_html/
