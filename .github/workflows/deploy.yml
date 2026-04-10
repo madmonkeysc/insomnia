@@ -29,7 +29,7 @@ jobs:
         with:
           username: u968279674
           server: 46.202.183.110
-          port: 22
+          port: 65002
           password: ${{ secrets.FTP_PASSWORD }}
           local_path: ./dist/
           remote_path: ./public_html/
